@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*
+TODO
+
+1. Implement the add note functionality
+- Pass the new note back to the app
+- add new note to an array
+- take array and render seperate note components for each item
+
+2. Implement the delete note functionality
+- callback from the note component to trigger a delete function
+- use the filter function to filter out the item that needs deletion
+- pass a id over to the note component, pass it back to the app.
+*/
