@@ -31,9 +31,13 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
-    //prevent reload the page when button is clicked
-
     props.onAdd(note);
+
+    setNote({
+      title: "",
+      content: "",
+    });
+    //prevent reload the page when button is clicked
     event.preventDefault();
   }
 
